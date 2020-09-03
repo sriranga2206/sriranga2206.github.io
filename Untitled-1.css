@@ -24,6 +24,7 @@ position: fixed;
 
 /* Slideshow container */
 .slideshow-container {
+  backgroung-color : blue ;
   max-width: 1000px;
   position: relative;
   padding-top: 10px ;
