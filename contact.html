@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TECH BEETLE</title>
+    <link rel="icon" type="image" href="images/circle-cropped.png">
+</head>
+<body>
+    <div class="page">
+      <div class="page_name">
+          <a href="home.html" >TECH BEETLE</a>
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Blogs 
+          <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content">
+              <a href="#">SMART PHONES</a>
+              <a href="#">LAPTOPS</a>
+              <a href="#">IOT</a>
+            </div>
+        </div> 
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+   </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="contactform">
+    <h1> CONTACT US</h1>
+    <form action="contact.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="Topic">Topic</label>
+          <select id="department-selection" name="concerned_department" required>
+              <option value="">Select a Topic</option>
+              <option value="PHONE">PHONE</option>
+              <option value="LAPTOP">LAPTOP</option>
+              <option value="IOT">IOT</option>
+          </select>
+        </div>
+        <div class="elem-group">
+          <label for="title">Reason For Contacting Us</label>
+          <input type="text" id="title" name="email_title" required placeholder="" pattern=[A-Za-z0-9\s]{8,60}>
+        </div>
+        <div class="elem-group">
+          <label for="message">Write your message</label>
+          <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
+
+<br>
+<br>
+
+    <div class="social_media">
+        <h3>You can find us on</h3>
+        <a href="https://www.facebook.com/techbeetle3" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/tech_beetle_/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/beetle_tech" class="fa fa-twitter"></a>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
