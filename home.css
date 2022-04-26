@@ -32,7 +32,7 @@ body
   height: 32rem;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.next, .prev {
     position: absolute;
     top: 200;
     bottom: 200;
