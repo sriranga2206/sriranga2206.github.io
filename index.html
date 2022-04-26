@@ -14,11 +14,11 @@
     <body>
         <div class="page">
             <div class="page_name">
-                <a href="home.html" >TECH BEETLE</a>
+                <a href="" >TECH BEETLE</a>
             </div>
         </div>
         <div class="topnav" id="myTopnav">
-          <a href="home.html">Home</a>
+          <a href="">Home</a>
           <div class="dropdown">
             <button class="dropbtn">Blogs 
               <i class="fa fa-caret-down"></i>
@@ -29,8 +29,8 @@
               <a href="#">IOT</a>
             </div>
           </div> 
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
           <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <div class="slideshow-background" >
@@ -55,6 +55,49 @@
             <span class="dot"></span> 
           </div>
         </div>
+        
+        <div id="about" class="container">
+    <div class="row">
+    <div class="card">
+      <header class="entry-header">
+        <a ><h1>About</h1></a>
+      </header>
+    <div class="about_para" >We are the new gen tech bloggers who work sincerely for gathering all new tech information and we will show our zeal towards  latest tech news and Gadget reviews. Please support us if you like our content and follow our social media handles. Contact us if you had any queries on our gmail or message in our social media handles</p>
+      <p>Our mail-id :<a href="#" style="color: blue;text-decoration: none;"> techbeetle3@gmail.com</a></p>	
+    </div>
+    </div>
+    </div>
+        <div id="contact" class="contactform">
+    <h1> CONTACT US</h1>
+    <form action="contact.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="elem-group">
+          <label for="Topic">Topic</label>
+          <select id="department-selection" name="concerned_department" required>
+              <option value="">Select a Topic</option>
+              <option value="PHONE">PHONE</option>
+              <option value="LAPTOP">LAPTOP</option>
+              <option value="IOT">IOT</option>
+          </select>
+        </div>
+        <div class="elem-group">
+          <label for="title">Reason For Contacting Us</label>
+          <input type="text" id="title" name="email_title" required placeholder="" pattern=[A-Za-z0-9\s]{8,60}>
+        </div>
+        <div class="elem-group">
+          <label for="message">Write your message</label>
+          <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
           <script>
           var slideIndex = 0;
           showSlides();
