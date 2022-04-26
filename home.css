@@ -34,8 +34,8 @@ body
 
 .next, .prev {
     position: absolute;
-    top: 200;
-    bottom: 200;
+    top: 170;
+    bottom: 170;
     z-index: 1;
     display: flex;
     align-items: center;
